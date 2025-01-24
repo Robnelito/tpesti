@@ -1,0 +1,21 @@
+meta {
+  name: PUT
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/membre.php?IdMembre=6
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  IdMembre: 6
+}
+
+body:multipart-form {
+  prenom: bar
+  nom: to
+  specialiteId: 37
+}

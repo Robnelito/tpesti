@@ -1,0 +1,24 @@
+meta {
+  name: PUT
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/api/projet.php?IdProjet=12
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  IdProjet: 12
+}
+
+body:multipart-form {
+  Nom: ROBIIIIII
+  Num: 1234
+  Debut: 
+  Fin: 
+  IdSpecialite: 37
+  IdMembre: 7
+}

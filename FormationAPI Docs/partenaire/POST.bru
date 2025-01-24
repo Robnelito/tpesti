@@ -1,0 +1,21 @@
+meta {
+  name: POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/partenaire.php
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  ~partnerName: Post
+  ~partnerDescription: post
+}
+
+body:multipart-form {
+  partnerName: foo
+  partnerDescription: bar
+}

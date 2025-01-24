@@ -1,0 +1,19 @@
+meta {
+  name: POST
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/api/tache.php
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  Nom: TATATA
+  Mun: 1234
+  Debut: 
+  Fin: 
+  IdProjet: 11
+}

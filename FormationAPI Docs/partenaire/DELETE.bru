@@ -1,0 +1,25 @@
+meta {
+  name: DELETE
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/api/partenaire.php?IdPartenaires_=2
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  IdPartenaires_: 2
+}
+
+headers {
+  ~partnerName: Post
+  ~partnerDescription: post
+}
+
+body:multipart-form {
+  partnerName: foo
+  partnerDescription: bar
+}

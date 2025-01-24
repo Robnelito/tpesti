@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "FormationAPI Docs",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

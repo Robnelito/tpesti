@@ -1,0 +1,23 @@
+meta {
+  name: PUT
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/tache.php?IdTache=1
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  IdTache: 1
+}
+
+body:multipart-form {
+  Nom: tttttasdadwadd
+  Mun: 1234
+  Debut: 
+  Fin: 
+  IdProjet: 11
+}

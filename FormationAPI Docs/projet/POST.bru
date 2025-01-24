@@ -1,0 +1,20 @@
+meta {
+  name: POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/api/projet.php
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  Nom: Tet
+  Num: 1234
+  Debut: 
+  Fin: 
+  IdSpecialite: 37
+  IdMembre: 7
+}

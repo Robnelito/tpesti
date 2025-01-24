@@ -1,0 +1,17 @@
+meta {
+  name: POST
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/api/membre.php
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  prenom: foo
+  nom: bar
+  specialiteId: 37
+}
