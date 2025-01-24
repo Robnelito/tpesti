@@ -1,0 +1,15 @@
+meta {
+  name: DELETE
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/api/tache.php?IdTache=1
+  body: none
+  auth: none
+}
+
+params:query {
+  IdTache: 1
+}

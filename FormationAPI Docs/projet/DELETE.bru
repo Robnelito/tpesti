@@ -1,0 +1,24 @@
+meta {
+  name: DELETE
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{host}}/api/projet.php?IdProjet=11
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  IdProjet: 11
+}
+
+body:multipart-form {
+  Nom: ROBIIIIII
+  Num: 1234
+  Debut: 
+  Fin: 
+  IdSpecialite: 37
+  IdMembre: 7
+}

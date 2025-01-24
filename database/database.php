@@ -195,6 +195,10 @@ class Database
 
     public function deleteProject($idProjet)
     {
+
+        // Delete related tasks
+        $this->deleteTaskRelatedToProject($idProjet);
+
         $sql = "DELETE FROM projet WHERE IdProjet = :idProjet";
         $params = [':idProjet' => $idProjet];
         return $this->executeNonQuery($sql, $params);
@@ -368,6 +372,13 @@ class Database
     {
         $sql = "DELETE FROM tache WHERE IdTache = :idTache";
         $params = [':idTache' => $idTache];
+        return $this->executeNonQuery($sql, $params);
+    }
+
+    public function deleteTaskRelatedToProject($idProjet)
+    {
+        $sql = "DELETE FROM tache WHERE IdProjet = :idProjet";
+        $params = [':idProjet' => $idProjet];
         return $this->executeNonQuery($sql, $params);
     }
 
