@@ -64,3 +64,48 @@ http://localhost:8000
 ```
 
 Votre application devrait maintenant être en cours d'exécution et accessible via votre navigateur.
+## Documentation de l'API
+
+L'API de cette application permet d'interagir avec les différentes fonctionnalités de gestion. Voici les principales routes disponibles :
+
+### Membres
+
+- **GET /api/membres** : Récupérer la liste de tous les membres.
+- **POST /api/membres** : Ajouter un nouveau membre.
+- **GET /api/membres/{id}** : Récupérer les détails d'un membre spécifique.
+- **PUT /api/membres/{id}** : Mettre à jour les informations d'un membre.
+- **DELETE /api/membres/{id}** : Supprimer un membre.
+
+### Projets
+
+- **GET /api/projets** : Récupérer la liste de tous les projets.
+- **POST /api/projets** : Ajouter un nouveau projet.
+- **GET /api/projets/{id}** : Récupérer les détails d'un projet spécifique.
+- **PUT /api/projets/{id}** : Mettre à jour les informations d'un projet.
+- **DELETE /api/projets/{id}** : Supprimer un projet.
+
+### Tâches
+
+- **GET /api/taches** : Récupérer la liste de toutes les tâches.
+- **POST /api/taches** : Ajouter une nouvelle tâche.
+- **GET /api/taches/{id}** : Récupérer les détails d'une tâche spécifique.
+- **PUT /api/taches/{id}** : Mettre à jour les informations d'une tâche.
+- **DELETE /api/taches/{id}** : Supprimer une tâche.
+
+### Partenaires
+
+- **GET /api/partenaires** : Récupérer la liste de tous les partenaires.
+- **POST /api/partenaires** : Ajouter un nouveau partenaire.
+- **GET /api/partenaires/{id}** : Récupérer les détails d'un partenaire spécifique.
+- **PUT /api/partenaires/{id}** : Mettre à jour les informations d'un partenaire.
+- **DELETE /api/partenaires/{id}** : Supprimer un partenaire.
+
+### Spécialités
+
+- **GET /api/specialites** : Récupérer la liste de toutes les spécialités.
+- **POST /api/specialites** : Ajouter une nouvelle spécialité.
+- **GET /api/specialites/{id}** : Récupérer les détails d'une spécialité spécifique.
+- **PUT /api/specialites/{id}** : Mettre à jour les informations d'une spécialité.
+- **DELETE /api/specialites/{id}** : Supprimer une spécialité.
+
+Chaque route de l'API doit être appelée avec les méthodes HTTP appropriées (GET, POST, PUT, DELETE) et les données nécessaires doivent être envoyées au format JSON.
