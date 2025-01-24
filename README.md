@@ -39,3 +39,28 @@ Assurez-vous que votre serveur MySQL est en cours d'exécution et que les inform
 2. Importer le fichier `database.sql` dans votre base de données MySQL.
 3. Configurer les paramètres de connexion à la base de données dans le fichier `database.php`.
 4. Lancer le serveur web et accéder à l'application via `http://localhost/tpesti`.
+
+## Lancer l'Application via CLI
+
+Pour lancer l'application via l'interface de ligne de commande (CLI), suivez les étapes ci-dessous :
+
+1. Ouvrez votre terminal ou invite de commandes.
+2. Naviguez jusqu'au répertoire principal de votre projet :
+
+```sh
+cd /c:/xampp/htdocs/tpesti
+```
+
+3. Démarrez le serveur PHP intégré en utilisant la commande suivante :
+
+```sh
+php -S localhost:8000
+```
+
+4. Ouvrez votre navigateur web et accédez à l'application via l'URL suivante :
+
+```
+http://localhost:8000
+```
+
+Votre application devrait maintenant être en cours d'exécution et accessible via votre navigateur.
